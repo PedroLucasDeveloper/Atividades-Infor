@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulários</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content= 
+	"width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form method="post" id="fContato" action="mailto:analea_fpaiva@yahoo.com.br">
+ 	<fieldset id="usuario"> <legend>Ação do Usuário</legend>
+ 	<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome"
+	size="20" maxLength="38" placeholder="Nome completo"></p>
+	<p><label for="cSenha">Senha:</label><input type="password" name="tSenha"
+	id="cSenha" size="8" maxLength="8" placeholder="8 dígitos"></p>	
+ 	<p>E-mail:<input type="email" name="tMail" id="cMail" size="20"> </p>
+ 	<fieldset id="sexo"><legend>Sexo</legend>
+ 	<input type="radio" name="tSexo" id="cMasc"/><label
+    for="cMasc">Masculino</label></br>
+ 	<input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+ 	</fieldset>
+ 	<p>Data de nascimento: <input type="date" name="tNasc" id="cNasc"</p>
+
+	 </fieldset>
+	 <fieldset id="endereco">
+	 <legend>Endereço do Usuário</legend>
+	 <p>Logadouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80"
+	placeholder="Rua, Av, Trav, ..."" </p>
+	 <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="9999"/></p>
+	 <p><label for="tEst">Estado:</label>
+	 <select name="tEst id="cEst>
+	 <option>Rio de Janeiro</option>
+	 <option>São Paulo</option>
+	 <option>Ceará</option>
+	 </select></p>
+	 <p><label for=cCid">Cidade:</label>
+	 <input type="text" name="tCid" id="cCid" maxlength="40" size="20" list="cidade"/>
+	 </p>
+	 <datalist id="cidade">
+	 <option value="Baturité"></option>
+	 <option value="Aratuba"></option>
+	 <option value="Capistrano"></option>
+	 <option value="Itapiuna"></option>
+	 </datalist>
+	 </fieldset>
+	 <fieldset id="mensagem"><legend> Mensagem do Usuário</legend>
+	 <p><label for="cUrg"> Grau de urgência</label>
+	 <input type="range" name="tUrg" id="cUrg"/></p>
+	 <p><label for="cMsg">Mensagem:</label>
+	 <textarea name="tMsg" id="tMsg" cols="45" rows="5" placeholder="Digite aqui sua
+	mensagem" ></textarea>
+	 </p>
+	 </fieldset>
+	 <fieldset id="pedido">
+	 <legend> Quero um Google Glass</legend>
+	 <p><input type="checkbox" name="tPed" id="cPed" checked/>
+	 <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+	 <p><label for="cCor">Cor:</label>
+	 <input type="color" name="tCor" id="cCor" value="#0000FF"/></p>
+	 <p><label for="cQnt">Quantidade:</label>
+	 <input type="number" name="tQnt" id="cQnt" min="0" max="5" value="0"/></p>
+	 <p><label for="cTot">preço total: R$</label>
+	 <input type="text" name="tTot" placeholder="Total a pagar" readonly/></p>
+	 </fieldset>
+	</br>
+	 <input type="submit" value="Enviar"/>
+	 </form>
+	</body>
+	</html>
